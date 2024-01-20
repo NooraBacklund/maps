@@ -1,0 +1,731 @@
+
+<!DOCTYPE html>
+<html style="height: 100%;">
+<head>
+    <title>Varsinais-Suomen lintutornit kartalla</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, html {
+            margin: 0;
+            font-family: sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Varsinais-Suomen lintutornit kartalla</h1>
+    <div>
+        <div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    
+    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+    
+        &lt;script&gt;
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        &lt;/script&gt;
+    
+    &lt;style&gt;html, body {width: 100%;height: 100%;margin: 0;padding: 0;}&lt;/style&gt;
+    &lt;style&gt;#map {position:absolute;top:0;bottom:0;right:0;left:0;}&lt;/style&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://code.jquery.com/jquery-1.12.4.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css&quot;/&gt;
+    
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
+            &lt;style&gt;
+                #map_7b9c16d6ec0512a39977a227288d9e5b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 90.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            &lt;/style&gt;
+        
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css&quot;/&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    
+    
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_7b9c16d6ec0512a39977a227288d9e5b&quot; &gt;&lt;/div&gt;
+        
+&lt;/body&gt;
+&lt;script&gt;
+    
+    
+            var map_7b9c16d6ec0512a39977a227288d9e5b = L.map(
+                &quot;map_7b9c16d6ec0512a39977a227288d9e5b&quot;,
+                {
+                    center: [60.4518, 22.2666],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_45f88af2f5ec0b3d0c22e3488094d3dc = L.tileLayer(
+                &quot;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
+                {&quot;attribution&quot;: &quot;Data by \u0026copy; \u003ca target=\&quot;_blank\&quot; href=\&quot;http://openstreetmap.org\&quot;\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\&quot;_blank\&quot; href=\&quot;http://www.openstreetmap.org/copyright\&quot;\u003eODbL\u003c/a\u003e.&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 18, &quot;maxZoom&quot;: 18, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
+            ).addTo(map_7b9c16d6ec0512a39977a227288d9e5b);
+        
+    
+            var marker_cluster_4f2bfb909470a88ccccd3d87ffd5907b = L.markerClusterGroup(
+                {}
+            );
+            map_7b9c16d6ec0512a39977a227288d9e5b.addLayer(marker_cluster_4f2bfb909470a88ccccd3d87ffd5907b);
+        
+    
+            var marker_b350a6e94f059251fb1df933a471f240 = L.marker(
+                [60.39390060001401, 22.460888421753694],
+                {}
+            ).addTo(marker_cluster_4f2bfb909470a88ccccd3d87ffd5907b);
+        
+    
+        var popup_a897b5af93488302e4eba16551b9ccc8 = L.popup({&quot;maxWidth&quot;: 350, &quot;minWidth&quot;: 350});
+
+        
+            
+                var html_dcc0e9be50c9ceae1b3d4f59a8fcacc1 = $(`&lt;div id=&quot;html_dcc0e9be50c9ceae1b3d4f59a8fcacc1&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Kuusistonlahti&lt;/b&gt;&lt;br&gt;     Ympäristö: ruovikkoinen merenlahti, laidunniitty ja peltoaukea&lt;br&gt;     Paras ajankohta: huhti-syyskuu&lt;br&gt;     Tornin korkeus (m): 0.0&lt;br&gt;     Kerrokset: 1&lt;br&gt;     Rakennusvuosi: 0     &lt;/div&gt;`)[0];
+                popup_a897b5af93488302e4eba16551b9ccc8.setContent(html_dcc0e9be50c9ceae1b3d4f59a8fcacc1);
+            
+        
+
+        marker_b350a6e94f059251fb1df933a471f240.bindPopup(popup_a897b5af93488302e4eba16551b9ccc8)
+        ;
+
+        
+    
+    
+            var marker_96903831426dd799d811515245a64b61 = L.marker(
+                [60.393911087624936, 22.246383279225235],
+                {}
+            ).addTo(marker_cluster_4f2bfb909470a88ccccd3d87ffd5907b);
+        
+    
+        var popup_f8b7868407bd6c03428c5197cb7c403f = L.popup({&quot;maxWidth&quot;: 350, &quot;minWidth&quot;: 350});
+
+        
+            
+                var html_5cecd55e542187e096e798b9cd61eff2 = $(`&lt;div id=&quot;html_5cecd55e542187e096e798b9cd61eff2&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Hirvensalo, Friskalanlahti&lt;/b&gt;&lt;br&gt;     Ympäristö: ruovikkoinen merenlahti, laidunnyytty, lehtosaareke&lt;br&gt;     Paras ajankohta: huhti-kesäkuu ja elo-syyskuu&lt;br&gt;     Tornin korkeus (m): 5.0&lt;br&gt;     Kerrokset: 1&lt;br&gt;     Rakennusvuosi: 0     &lt;/div&gt;`)[0];
+                popup_f8b7868407bd6c03428c5197cb7c403f.setContent(html_5cecd55e542187e096e798b9cd61eff2);
+            
+        
+
+        marker_96903831426dd799d811515245a64b61.bindPopup(popup_f8b7868407bd6c03428c5197cb7c403f)
+        ;
+
+        
+    
+    
+            var marker_c3b4ecd62898d5f7151e109b0e1e6177 = L.marker(
+                [60.40581376477636, 22.284956947903027],
+                {}
+            ).addTo(marker_cluster_4f2bfb909470a88ccccd3d87ffd5907b);
+        
+    
+        var popup_19c5d0c354fd873aa9b3f8aa67f0c983 = L.popup({&quot;maxWidth&quot;: 350, &quot;minWidth&quot;: 350});
+
+        
+            
+                var html_6529df9bc4aab96af76cda2d92a8df77 = $(`&lt;div id=&quot;html_6529df9bc4aab96af76cda2d92a8df77&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Rauvolanlahti&lt;/b&gt;&lt;br&gt;     Ympäristö: ruovikkoinen merenlahti, lähellä lehtometsiä ja jätealtaat&lt;br&gt;     Paras ajankohta: huhti-syyskuu ja joulu-tammikuu&lt;br&gt;     Tornin korkeus (m): 0.0&lt;br&gt;     Kerrokset: 1&lt;br&gt;     Rakennusvuosi: 0     &lt;/div&gt;`)[0];
+                popup_19c5d0c354fd873aa9b3f8aa67f0c983.setContent(html_6529df9bc4aab96af76cda2d92a8df77);
+            
+        
+
+        marker_c3b4ecd62898d5f7151e109b0e1e6177.bindPopup(popup_19c5d0c354fd873aa9b3f8aa67f0c983)
+        ;
+
+        
+    
+    
+            var marker_8f74d107619e55d9652cd1a04c5ca6b9 = L.marker(
+                [60.63361265799658, 21.849611202287594],
+                {}
+            ).addTo(marker_cluster_4f2bfb909470a88ccccd3d87ffd5907b);
+        
+    
+        var popup_f8b78832f4fb736d090f4c7d8a583757 = L.popup({&quot;maxWidth&quot;: 350, &quot;minWidth&quot;: 350});
+
+        
+            
+                var html_b2a613b91002dc21007c39231f1dff52 = $(`&lt;div id=&quot;html_b2a613b91002dc21007c39231f1dff52&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Vasikkahaka&lt;/b&gt;&lt;br&gt;     Ympäristö: rehevä merenlahti&lt;br&gt;     Paras ajankohta: huhti-elokuu&lt;br&gt;     Tornin korkeus (m): 0.0&lt;br&gt;     Kerrokset: 3&lt;br&gt;     Rakennusvuosi: 0     &lt;/div&gt;`)[0];
+                popup_f8b78832f4fb736d090f4c7d8a583757.setContent(html_b2a613b91002dc21007c39231f1dff52);
+            
+        
+
+        marker_8f74d107619e55d9652cd1a04c5ca6b9.bindPopup(popup_f8b78832f4fb736d090f4c7d8a583757)
+        ;
+
+        
+    
+    
+            var marker_425652a20845dcd9c3f6ba64ef28285a = L.marker(
+                [60.60858293789658, 21.842197328551915],
+                {}
+            ).addTo(marker_cluster_4f2bfb909470a88ccccd3d87ffd5907b);
+        
+    
+        var popup_d3e4babb5ae4158ed9947a023ab5c548 = L.popup({&quot;maxWidth&quot;: 350, &quot;minWidth&quot;: 350});
+
+        
+            
+                var html_3d966325975e4be8e39ab0ee07d9ca32 = $(`&lt;div id=&quot;html_3d966325975e4be8e39ab0ee07d9ca32&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Kuustonlahti&lt;/b&gt;&lt;br&gt;     Ympäristö: rehevä merenlahti&lt;br&gt;     Paras ajankohta: huhti-elokuu&lt;br&gt;     Tornin korkeus (m): 0.0&lt;br&gt;     Kerrokset: 1&lt;br&gt;     Rakennusvuosi: 0     &lt;/div&gt;`)[0];
+                popup_d3e4babb5ae4158ed9947a023ab5c548.setContent(html_3d966325975e4be8e39ab0ee07d9ca32);
+            
+        
+
+        marker_425652a20845dcd9c3f6ba64ef28285a.bindPopup(popup_d3e4babb5ae4158ed9947a023ab5c548)
+        ;
+
+        
+    
+    
+            var marker_2096a27fcf6717ac5ea489846a8e4f51 = L.marker(
+                [60.39969012946279, 22.642859169201277],
+                {}
+            ).addTo(marker_cluster_4f2bfb909470a88ccccd3d87ffd5907b);
+        
+    
+        var popup_cce6e2e4634f7b7f7604a82a4801b018 = L.popup({&quot;maxWidth&quot;: 350, &quot;minWidth&quot;: 350});
+
+        
+            
+                var html_aa865b433586a3c90d6eb631e97441c3 = $(`&lt;div id=&quot;html_aa865b433586a3c90d6eb631e97441c3&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Paimionlahti&lt;/b&gt;&lt;br&gt;     Ympäristö: merenlahti&lt;br&gt;     Paras ajankohta: huhti-toukokuu&lt;br&gt;     Tornin korkeus (m): 0.0&lt;br&gt;     Kerrokset: 2&lt;br&gt;     Rakennusvuosi: 0     &lt;/div&gt;`)[0];
+                popup_cce6e2e4634f7b7f7604a82a4801b018.setContent(html_aa865b433586a3c90d6eb631e97441c3);
+            
+        
+
+        marker_2096a27fcf6717ac5ea489846a8e4f51.bindPopup(popup_cce6e2e4634f7b7f7604a82a4801b018)
+        ;
+
+        
+    
+    
+            var marker_9c836af1bdfb8b12514ccf296fc42020 = L.marker(
+                [60.288535300167496, 22.1900218159202],
+                {}
+            ).addTo(marker_cluster_4f2bfb909470a88ccccd3d87ffd5907b);
+        
+    
+        var popup_2e29abeede7c713381effc1d80559df8 = L.popup({&quot;maxWidth&quot;: 350, &quot;minWidth&quot;: 350});
+
+        
+            
+                var html_13bd72a7293f21c422b9697c4f1723eb = $(`&lt;div id=&quot;html_13bd72a7293f21c422b9697c4f1723eb&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Petteby&lt;/b&gt;&lt;br&gt;     Ympäristö: ruovikkorantainen merenlahti&lt;br&gt;     Paras ajankohta: huhti-kesäkuu&lt;br&gt;     Tornin korkeus (m): 0.0&lt;br&gt;     Kerrokset: 0&lt;br&gt;     Rakennusvuosi: 0     &lt;/div&gt;`)[0];
+                popup_2e29abeede7c713381effc1d80559df8.setContent(html_13bd72a7293f21c422b9697c4f1723eb);
+            
+        
+
+        marker_9c836af1bdfb8b12514ccf296fc42020.bindPopup(popup_2e29abeede7c713381effc1d80559df8)
+        ;
+
+        
+    
+    
+            var marker_1de276ff783821d14f58760199b1cdff = L.marker(
+                [60.241796342641926, 22.207091584451614],
+                {}
+            ).addTo(marker_cluster_4f2bfb909470a88ccccd3d87ffd5907b);
+        
+    
+        var popup_fb41c0236425a08f601ac21a081c9d36 = L.popup({&quot;maxWidth&quot;: 350, &quot;minWidth&quot;: 350});
+
+        
+            
+                var html_7e4e5c942cd6a75105707fc6c25d2266 = $(`&lt;div id=&quot;html_7e4e5c942cd6a75105707fc6c25d2266&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Lenholm, Mattsholmsfladan&lt;/b&gt;&lt;br&gt;     Ympäristö: matala ruovikkoinen lahti, hakaniittyjä ja peltoja&lt;br&gt;     Paras ajankohta: -&lt;br&gt;     Tornin korkeus (m): 5.0&lt;br&gt;     Kerrokset: 1&lt;br&gt;     Rakennusvuosi: 0     &lt;/div&gt;`)[0];
+                popup_fb41c0236425a08f601ac21a081c9d36.setContent(html_7e4e5c942cd6a75105707fc6c25d2266);
+            
+        
+
+        marker_1de276ff783821d14f58760199b1cdff.bindPopup(popup_fb41c0236425a08f601ac21a081c9d36)
+        ;
+
+        
+    
+    
+            var marker_3d9e7593589e04e7b97fa9e60e65c8d2 = L.marker(
+                [60.46898192465348, 22.124271712686994],
+                {}
+            ).addTo(marker_cluster_4f2bfb909470a88ccccd3d87ffd5907b);
+        
+    
+        var popup_261bf01b921dfc8167ac7a908a345757 = L.popup({&quot;maxWidth&quot;: 350, &quot;minWidth&quot;: 350});
+
+        
+            
+                var html_be5af4b0494890d5b47d55516bdfd5c4 = $(`&lt;div id=&quot;html_be5af4b0494890d5b47d55516bdfd5c4&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Raisionlahti&lt;/b&gt;&lt;br&gt;     Ympäristö: hyvin matala, ruovikkoinen merenlahti ja rantaniittyjä&lt;br&gt;     Paras ajankohta: huhti-toukokuu ja elo-syyskuu&lt;br&gt;     Tornin korkeus (m): 3.0&lt;br&gt;     Kerrokset: 0&lt;br&gt;     Rakennusvuosi: 1985     &lt;/div&gt;`)[0];
+                popup_261bf01b921dfc8167ac7a908a345757.setContent(html_be5af4b0494890d5b47d55516bdfd5c4);
+            
+        
+
+        marker_3d9e7593589e04e7b97fa9e60e65c8d2.bindPopup(popup_261bf01b921dfc8167ac7a908a345757)
+        ;
+
+        
+    
+    
+            var marker_f48ee308eb4fb1f2a30cbce9c7634928 = L.marker(
+                [60.36994853434658, 23.086710009681596],
+                {}
+            ).addTo(marker_cluster_4f2bfb909470a88ccccd3d87ffd5907b);
+        
+    
+        var popup_3cc096eac82784880e304c6a9f4939ce = L.popup({&quot;maxWidth&quot;: 350, &quot;minWidth&quot;: 350});
+
+        
+            
+                var html_8784fa3aa7770bb8c487f8ce354b7315 = $(`&lt;div id=&quot;html_8784fa3aa7770bb8c487f8ce354b7315&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Viurilanlahti&lt;/b&gt;&lt;br&gt;     Ympäristö: ruovikkoinen merenlahti, jokisuisto, rantaniitty, pelto ja vanhat vedenpuhdistusaltaat&lt;br&gt;     Paras ajankohta: huhti-syyskuu&lt;br&gt;     Tornin korkeus (m): 6.0&lt;br&gt;     Kerrokset: 2&lt;br&gt;     Rakennusvuosi: 1986     &lt;/div&gt;`)[0];
+                popup_3cc096eac82784880e304c6a9f4939ce.setContent(html_8784fa3aa7770bb8c487f8ce354b7315);
+            
+        
+
+        marker_f48ee308eb4fb1f2a30cbce9c7634928.bindPopup(popup_3cc096eac82784880e304c6a9f4939ce)
+        ;
+
+        
+    
+    
+            var marker_e9da4e6768946ff4f0789185a31ee2e7 = L.marker(
+                [60.3731004886211, 23.089997217366733],
+                {}
+            ).addTo(marker_cluster_4f2bfb909470a88ccccd3d87ffd5907b);
+        
+    
+        var popup_8895860f68235f11c7dbdbd90d47a26a = L.popup({&quot;maxWidth&quot;: 350, &quot;minWidth&quot;: 350});
+
+        
+            
+                var html_bc3db18c1a5c286485184335934845bd = $(`&lt;div id=&quot;html_bc3db18c1a5c286485184335934845bd&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Halikonlahti&lt;/b&gt;&lt;br&gt;     Ympäristö: ruovikkoinen merenlahti, jokisuisto, rantaniitty, pelto ja vanhat vedenpuhdistusaltaat&lt;br&gt;     Paras ajankohta: huhti-syyskuu&lt;br&gt;     Tornin korkeus (m): 0.0&lt;br&gt;     Kerrokset: 0&lt;br&gt;     Rakennusvuosi: 0     &lt;/div&gt;`)[0];
+                popup_8895860f68235f11c7dbdbd90d47a26a.setContent(html_bc3db18c1a5c286485184335934845bd);
+            
+        
+
+        marker_e9da4e6768946ff4f0789185a31ee2e7.bindPopup(popup_8895860f68235f11c7dbdbd90d47a26a)
+        ;
+
+        
+    
+    
+            var marker_46cbe84ac3467fce5d8d5df9a0787af2 = L.marker(
+                [60.41490054681852, 23.551964294235802],
+                {}
+            ).addTo(marker_cluster_4f2bfb909470a88ccccd3d87ffd5907b);
+        
+    
+        var popup_aaf1c6a32398161f56b03249c4743338 = L.popup({&quot;maxWidth&quot;: 350, &quot;minWidth&quot;: 350});
+
+        
+            
+                var html_73ba4e5dc1e2b2623b67a9613f738340 = $(`&lt;div id=&quot;html_73ba4e5dc1e2b2623b67a9613f738340&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Omenajärvi&lt;/b&gt;&lt;br&gt;     Ympäristö: lintujärvi&lt;br&gt;     Paras ajankohta: huhti-syyskuu&lt;br&gt;     Tornin korkeus (m): 4.0&lt;br&gt;     Kerrokset: 1&lt;br&gt;     Rakennusvuosi: 0     &lt;/div&gt;`)[0];
+                popup_aaf1c6a32398161f56b03249c4743338.setContent(html_73ba4e5dc1e2b2623b67a9613f738340);
+            
+        
+
+        marker_46cbe84ac3467fce5d8d5df9a0787af2.bindPopup(popup_aaf1c6a32398161f56b03249c4743338)
+        ;
+
+        
+    
+    
+            var marker_0035ab0ba57e7fde9991bf554b03a085 = L.marker(
+                [60.56741456388599, 21.57187361641025],
+                {}
+            ).addTo(marker_cluster_4f2bfb909470a88ccccd3d87ffd5907b);
+        
+    
+        var popup_391f7b7d5244948b178a32d3580ff324 = L.popup({&quot;maxWidth&quot;: 350, &quot;minWidth&quot;: 350});
+
+        
+            
+                var html_aa0bacc04fe0094a1d1df159564fde20 = $(`&lt;div id=&quot;html_aa0bacc04fe0094a1d1df159564fde20&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Rantalanlahti&lt;/b&gt;&lt;br&gt;     Ympäristö: osittain pengerretty merenlahti&lt;br&gt;     Paras ajankohta: huhti-syyskuu&lt;br&gt;     Tornin korkeus (m): 0.0&lt;br&gt;     Kerrokset: 1&lt;br&gt;     Rakennusvuosi: 0     &lt;/div&gt;`)[0];
+                popup_391f7b7d5244948b178a32d3580ff324.setContent(html_aa0bacc04fe0094a1d1df159564fde20);
+            
+        
+
+        marker_0035ab0ba57e7fde9991bf554b03a085.bindPopup(popup_391f7b7d5244948b178a32d3580ff324)
+        ;
+
+        
+    
+    
+            var marker_87c7fabbbbae27b2a2b198cc69f57760 = L.marker(
+                [60.439042733844495, 22.19476388988779],
+                {}
+            ).addTo(marker_cluster_4f2bfb909470a88ccccd3d87ffd5907b);
+        
+    
+        var popup_156de9f881792b8da4298799ba183354 = L.popup({&quot;maxWidth&quot;: 350, &quot;minWidth&quot;: 350});
+
+        
+            
+                var html_ae01991422b9bfae1180e555c29d7526 = $(`&lt;div id=&quot;html_ae01991422b9bfae1180e555c29d7526&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Ruissalo, Marjaniemi&lt;/b&gt;&lt;br&gt;     Ympäristö: metsän ympäröimä merenlahti&lt;br&gt;     Paras ajankohta: huhti-syyskuu&lt;br&gt;     Tornin korkeus (m): 0.0&lt;br&gt;     Kerrokset: 3&lt;br&gt;     Rakennusvuosi: 0     &lt;/div&gt;`)[0];
+                popup_156de9f881792b8da4298799ba183354.setContent(html_ae01991422b9bfae1180e555c29d7526);
+            
+        
+
+        marker_87c7fabbbbae27b2a2b198cc69f57760.bindPopup(popup_156de9f881792b8da4298799ba183354)
+        ;
+
+        
+    
+    
+            var marker_9f267d797189a605d3438b33a26085b0 = L.marker(
+                [60.41399250400752, 21.796192133080297],
+                {}
+            ).addTo(marker_cluster_4f2bfb909470a88ccccd3d87ffd5907b);
+        
+    
+        var popup_2179421a20252f6483ec461ebd463ae7 = L.popup({&quot;maxWidth&quot;: 350, &quot;minWidth&quot;: 350});
+
+        
+            
+                var html_eac930675ec4fe1c93c4ff85f3501f93 = $(`&lt;div id=&quot;html_eac930675ec4fe1c93c4ff85f3501f93&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Ruissalo, Rantatie&lt;/b&gt;&lt;br&gt;     Ympäristö: metsän ympäröimä merenlahti&lt;br&gt;     Paras ajankohta: huhti-syyskuu&lt;br&gt;     Tornin korkeus (m): 0.0&lt;br&gt;     Kerrokset: 1&lt;br&gt;     Rakennusvuosi: 1984     &lt;/div&gt;`)[0];
+                popup_2179421a20252f6483ec461ebd463ae7.setContent(html_eac930675ec4fe1c93c4ff85f3501f93);
+            
+        
+
+        marker_9f267d797189a605d3438b33a26085b0.bindPopup(popup_2179421a20252f6483ec461ebd463ae7)
+        ;
+
+        
+    
+    
+            var marker_7388a7e8f343e68a8e90cc68605f8210 = L.marker(
+                [60.42276687191972, 22.12999000085745],
+                {}
+            ).addTo(marker_cluster_4f2bfb909470a88ccccd3d87ffd5907b);
+        
+    
+        var popup_431e3cafa820af460dbecdcdcd860716 = L.popup({&quot;maxWidth&quot;: 350, &quot;minWidth&quot;: 350});
+
+        
+            
+                var html_968f2eb7685077d7d8ca0d75b2207cfd = $(`&lt;div id=&quot;html_968f2eb7685077d7d8ca0d75b2207cfd&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Ruissalo, Krottilanlahti&lt;/b&gt;&lt;br&gt;     Ympäristö: matala ruovikkoinen merenlahti&lt;br&gt;     Paras ajankohta: touko-kesäkuu ja elo-syyskuu&lt;br&gt;     Tornin korkeus (m): 12.0&lt;br&gt;     Kerrokset: 2&lt;br&gt;     Rakennusvuosi: 1984     &lt;/div&gt;`)[0];
+                popup_431e3cafa820af460dbecdcdcd860716.setContent(html_968f2eb7685077d7d8ca0d75b2207cfd);
+            
+        
+
+        marker_7388a7e8f343e68a8e90cc68605f8210.bindPopup(popup_431e3cafa820af460dbecdcdcd860716)
+        ;
+
+        
+    
+    
+            var marker_1c7b4870953809ff5036e8de192a4edc = L.marker(
+                [59.84342774477836, 23.076462530381303],
+                {}
+            ).addTo(marker_cluster_4f2bfb909470a88ccccd3d87ffd5907b);
+        
+    
+        var popup_ae025de33404058129929e34127624ab = L.popup({&quot;maxWidth&quot;: 350, &quot;minWidth&quot;: 350});
+
+        
+            
+                var html_90f2e9ed87bcd2a4928f002961045bba = $(`&lt;div id=&quot;html_90f2e9ed87bcd2a4928f002961045bba&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Täktom&lt;/b&gt;&lt;br&gt;     Ympäristö: peltoaukea sekä golf- ja lentokenttä&lt;br&gt;     Paras ajankohta: maalis-toukokuu ja elo-lokakuu&lt;br&gt;     Tornin korkeus (m): 0.0&lt;br&gt;     Kerrokset: 0&lt;br&gt;     Rakennusvuosi: 0     &lt;/div&gt;`)[0];
+                popup_ae025de33404058129929e34127624ab.setContent(html_90f2e9ed87bcd2a4928f002961045bba);
+            
+        
+
+        marker_1c7b4870953809ff5036e8de192a4edc.bindPopup(popup_ae025de33404058129929e34127624ab)
+        ;
+
+        
+    
+    
+            var marker_6f96ad7708a10218700a002d5c7912db = L.marker(
+                [59.83656275660345, 23.16016540100851],
+                {}
+            ).addTo(marker_cluster_4f2bfb909470a88ccccd3d87ffd5907b);
+        
+    
+        var popup_40018b906d781c9d69c8ab1cf2046031 = L.popup({&quot;maxWidth&quot;: 350, &quot;minWidth&quot;: 350});
+
+        
+            
+                var html_6c381adc0a556a179257723d6565b1f9 = $(`&lt;div id=&quot;html_6c381adc0a556a179257723d6565b1f9&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Svanvik&lt;/b&gt;&lt;br&gt;     Ympäristö: hiekkarantainen, ruovikoituva merenlahti&lt;br&gt;     Paras ajankohta: -&lt;br&gt;     Tornin korkeus (m): 0.0&lt;br&gt;     Kerrokset: 0&lt;br&gt;     Rakennusvuosi: 1982     &lt;/div&gt;`)[0];
+                popup_40018b906d781c9d69c8ab1cf2046031.setContent(html_6c381adc0a556a179257723d6565b1f9);
+            
+        
+
+        marker_6f96ad7708a10218700a002d5c7912db.bindPopup(popup_40018b906d781c9d69c8ab1cf2046031)
+        ;
+
+        
+    
+    
+            var marker_c31026235a24f5d1a4703ddbc1173c44 = L.marker(
+                [60.05017150042382, 23.654427885814368],
+                {}
+            ).addTo(marker_cluster_4f2bfb909470a88ccccd3d87ffd5907b);
+        
+    
+        var popup_41d768b41ca92060ba80804d090b7e1b = L.popup({&quot;maxWidth&quot;: 350, &quot;minWidth&quot;: 350});
+
+        
+            
+                var html_9b2f7d59b6d7e73caf5a5a57bb82c52a = $(`&lt;div id=&quot;html_9b2f7d59b6d7e73caf5a5a57bb82c52a&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Läppträsket&lt;/b&gt;&lt;br&gt;     Ympäristö: rehevä lintujärvi, pensaikko- ja peltorantoja&lt;br&gt;     Paras ajankohta: huhti-toukokuu ja elo-lokakuu&lt;br&gt;     Tornin korkeus (m): 7.0&lt;br&gt;     Kerrokset: 1&lt;br&gt;     Rakennusvuosi: 0     &lt;/div&gt;`)[0];
+                popup_41d768b41ca92060ba80804d090b7e1b.setContent(html_9b2f7d59b6d7e73caf5a5a57bb82c52a);
+            
+        
+
+        marker_c31026235a24f5d1a4703ddbc1173c44.bindPopup(popup_41d768b41ca92060ba80804d090b7e1b)
+        ;
+
+        
+    
+    
+            var marker_1c25ea03f290d3c0179b6e1240cf7a35 = L.marker(
+                [60.046450187293544, 23.646901655798832],
+                {}
+            ).addTo(marker_cluster_4f2bfb909470a88ccccd3d87ffd5907b);
+        
+    
+        var popup_b223857ee00d6bf24a46861d537ef24b = L.popup({&quot;maxWidth&quot;: 350, &quot;minWidth&quot;: 350});
+
+        
+            
+                var html_2bb7a99026b4dfb5f0592de532acd8ba = $(`&lt;div id=&quot;html_2bb7a99026b4dfb5f0592de532acd8ba&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Läppträsket&lt;/b&gt;&lt;br&gt;     Ympäristö: rehevä lintujärvi, pensaikko- ja peltorantoja&lt;br&gt;     Paras ajankohta: huhti-toukokuu ja elo-lokakuu&lt;br&gt;     Tornin korkeus (m): 3.0&lt;br&gt;     Kerrokset: 1&lt;br&gt;     Rakennusvuosi: 1985     &lt;/div&gt;`)[0];
+                popup_b223857ee00d6bf24a46861d537ef24b.setContent(html_2bb7a99026b4dfb5f0592de532acd8ba);
+            
+        
+
+        marker_1c25ea03f290d3c0179b6e1240cf7a35.bindPopup(popup_b223857ee00d6bf24a46861d537ef24b)
+        ;
+
+        
+    
+    
+            var marker_a4af65562753703da53a53eb810730d7 = L.marker(
+                [59.945000660011885, 23.32740172811242],
+                {}
+            ).addTo(marker_cluster_4f2bfb909470a88ccccd3d87ffd5907b);
+        
+    
+        var popup_c1af6e45879db76eb1f86bb26d501258 = L.popup({&quot;maxWidth&quot;: 350, &quot;minWidth&quot;: 350});
+
+        
+            
+                var html_79041f97c55d40c3a224ad152a28ce7e = $(`&lt;div id=&quot;html_79041f97c55d40c3a224ad152a28ce7e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Harpar Storträsket&lt;/b&gt;&lt;br&gt;     Ympäristö: suo ja umpeenkasvava nevalampi&lt;br&gt;     Paras ajankohta: huhti-toukokuu&lt;br&gt;     Tornin korkeus (m): 0.0&lt;br&gt;     Kerrokset: 1&lt;br&gt;     Rakennusvuosi: 0     &lt;/div&gt;`)[0];
+                popup_c1af6e45879db76eb1f86bb26d501258.setContent(html_79041f97c55d40c3a224ad152a28ce7e);
+            
+        
+
+        marker_a4af65562753703da53a53eb810730d7.bindPopup(popup_c1af6e45879db76eb1f86bb26d501258)
+        ;
+
+        
+    
+    
+            var marker_b816a16e85a3bfb2baac5f922d8ec179 = L.marker(
+                [59.980153133913504, 23.40907600921828],
+                {}
+            ).addTo(marker_cluster_4f2bfb909470a88ccccd3d87ffd5907b);
+        
+    
+        var popup_7b3693c761ec6c9d7018dfe2d2b4daf9 = L.popup({&quot;maxWidth&quot;: 350, &quot;minWidth&quot;: 350});
+
+        
+            
+                var html_876d5728597c922a1188bede270c98e6 = $(`&lt;div id=&quot;html_876d5728597c922a1188bede270c98e6&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Stadsfjärden&lt;/b&gt;&lt;br&gt;     Ympäristö: merenlahti ja rantalehdot&lt;br&gt;     Paras ajankohta: huhti-toukokuu ja syys-marraskuu&lt;br&gt;     Tornin korkeus (m): 0.0&lt;br&gt;     Kerrokset: 1&lt;br&gt;     Rakennusvuosi: 0     &lt;/div&gt;`)[0];
+                popup_7b3693c761ec6c9d7018dfe2d2b4daf9.setContent(html_876d5728597c922a1188bede270c98e6);
+            
+        
+
+        marker_b816a16e85a3bfb2baac5f922d8ec179.bindPopup(popup_7b3693c761ec6c9d7018dfe2d2b4daf9)
+        ;
+
+        
+    
+    
+            var marker_7a983f418f7a314908f4877d74f69cc9 = L.marker(
+                [60.53180458633806, 21.935991260452205],
+                {}
+            ).addTo(marker_cluster_4f2bfb909470a88ccccd3d87ffd5907b);
+        
+    
+        var popup_d9dade35caae705977af3d84b942542f = L.popup({&quot;maxWidth&quot;: 350, &quot;minWidth&quot;: 350});
+
+        
+            
+                var html_25cd5369c58b651dfa4c33049d95d03c = $(`&lt;div id=&quot;html_25cd5369c58b651dfa4c33049d95d03c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Oukkulanlahti&lt;/b&gt;&lt;br&gt;     Ympäristö: ruovikkorantainen merenlahti&lt;br&gt;     Paras ajankohta: -&lt;br&gt;     Tornin korkeus (m): 6.0&lt;br&gt;     Kerrokset: 2&lt;br&gt;     Rakennusvuosi: 2004     &lt;/div&gt;`)[0];
+                popup_d9dade35caae705977af3d84b942542f.setContent(html_25cd5369c58b651dfa4c33049d95d03c);
+            
+        
+
+        marker_7a983f418f7a314908f4877d74f69cc9.bindPopup(popup_d9dade35caae705977af3d84b942542f)
+        ;
+
+        
+    
+    
+            var marker_72e18aaa96010715faf5d3af9f8088df = L.marker(
+                [60.28892203446434, 21.95027428742074],
+                {}
+            ).addTo(marker_cluster_4f2bfb909470a88ccccd3d87ffd5907b);
+        
+    
+        var popup_390575cd1ca3dcc47b6f417e839b7f2d = L.popup({&quot;maxWidth&quot;: 350, &quot;minWidth&quot;: 350});
+
+        
+            
+                var html_b1d07a4bf5012d7a70e02e2aaefac2ca = $(`&lt;div id=&quot;html_b1d07a4bf5012d7a70e02e2aaefac2ca&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Aasla, Karhuvuori&lt;/b&gt;&lt;br&gt;     Ympäristö: laaja näkymä, lännessä puiden latvat vähentävät hieman näkyvyyttä&lt;br&gt;     Paras ajankohta: -&lt;br&gt;     Tornin korkeus (m): 0.0&lt;br&gt;     Kerrokset: 0&lt;br&gt;     Rakennusvuosi: 2004     &lt;/div&gt;`)[0];
+                popup_390575cd1ca3dcc47b6f417e839b7f2d.setContent(html_b1d07a4bf5012d7a70e02e2aaefac2ca);
+            
+        
+
+        marker_72e18aaa96010715faf5d3af9f8088df.bindPopup(popup_390575cd1ca3dcc47b6f417e839b7f2d)
+        ;
+
+        
+    
+    
+            var marker_411806073745cf0a1c824c3b38374e50 = L.marker(
+                [60.8266296380045, 21.41482261704584],
+                {}
+            ).addTo(marker_cluster_4f2bfb909470a88ccccd3d87ffd5907b);
+        
+    
+        var popup_40924c144b670ddbfb117fbd6b68fd6a = L.popup({&quot;maxWidth&quot;: 350, &quot;minWidth&quot;: 350});
+
+        
+            
+                var html_b21b93bd969a28859e08d34369992935 = $(`&lt;div id=&quot;html_b21b93bd969a28859e08d34369992935&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Hiunjärvi&lt;/b&gt;&lt;br&gt;     Ympäristö: pieni, rehevä lintujärvi&lt;br&gt;     Paras ajankohta: touko-kesäkuu&lt;br&gt;     Tornin korkeus (m): 2.5&lt;br&gt;     Kerrokset: 1&lt;br&gt;     Rakennusvuosi: 1985     &lt;/div&gt;`)[0];
+                popup_40924c144b670ddbfb117fbd6b68fd6a.setContent(html_b21b93bd969a28859e08d34369992935);
+            
+        
+
+        marker_411806073745cf0a1c824c3b38374e50.bindPopup(popup_40924c144b670ddbfb117fbd6b68fd6a)
+        ;
+
+        
+    
+    
+            var marker_4f9576a893ed8f3eac6b86734b9cbdc5 = L.marker(
+                [60.9079303588135, 21.283003880357263],
+                {}
+            ).addTo(marker_cluster_4f2bfb909470a88ccccd3d87ffd5907b);
+        
+    
+        var popup_a4c4f65aaf4eebd960f5af35e46d141c = L.popup({&quot;maxWidth&quot;: 350, &quot;minWidth&quot;: 350});
+
+        
+            
+                var html_bf009e22b94c749c4348333dfbdf24f0 = $(`&lt;div id=&quot;html_bf009e22b94c749c4348333dfbdf24f0&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Pyhämaa&lt;/b&gt;&lt;br&gt;     Ympäristö: ruovikon reunustama järvi&lt;br&gt;     Paras ajankohta: -&lt;br&gt;     Tornin korkeus (m): 0.0&lt;br&gt;     Kerrokset: 0&lt;br&gt;     Rakennusvuosi: 0     &lt;/div&gt;`)[0];
+                popup_a4c4f65aaf4eebd960f5af35e46d141c.setContent(html_bf009e22b94c749c4348333dfbdf24f0);
+            
+        
+
+        marker_4f9576a893ed8f3eac6b86734b9cbdc5.bindPopup(popup_a4c4f65aaf4eebd960f5af35e46d141c)
+        ;
+
+        
+    
+    
+            var marker_3879a251f173f66d2e35fcb3dc258dd7 = L.marker(
+                [60.06079407570504, 22.61853895352418],
+                {}
+            ).addTo(marker_cluster_4f2bfb909470a88ccccd3d87ffd5907b);
+        
+    
+        var popup_d460541ceea89a5dc279245712881171 = L.popup({&quot;maxWidth&quot;: 350, &quot;minWidth&quot;: 350});
+
+        
+            
+                var html_fcb0ae6680c68766285f038dd372e221 = $(`&lt;div id=&quot;html_fcb0ae6680c68766285f038dd372e221&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Galtarbyviken&lt;/b&gt;&lt;br&gt;     Ympäristö: pitkä ja kapea lahti sekä isojen peltojen ympäröimä ruovikko&lt;br&gt;     Paras ajankohta: maalis-lokakuu&lt;br&gt;     Tornin korkeus (m): 2.5&lt;br&gt;     Kerrokset: 1&lt;br&gt;     Rakennusvuosi: 0     &lt;/div&gt;`)[0];
+                popup_d460541ceea89a5dc279245712881171.setContent(html_fcb0ae6680c68766285f038dd372e221);
+            
+        
+
+        marker_3879a251f173f66d2e35fcb3dc258dd7.bindPopup(popup_d460541ceea89a5dc279245712881171)
+        ;
+
+        
+    
+    
+            var marker_2af61db9feacd8adf5779eed174da478 = L.marker(
+                [61.08664527569829, 21.299326765133113],
+                {}
+            ).addTo(marker_cluster_4f2bfb909470a88ccccd3d87ffd5907b);
+        
+    
+        var popup_04e27dfcd508f9a5d7a8c415e3388a1d = L.popup({&quot;maxWidth&quot;: 350, &quot;minWidth&quot;: 350});
+
+        
+            
+                var html_ea6c26fd69964dd801f7fda8a7a0655c = $(`&lt;div id=&quot;html_ea6c26fd69964dd801f7fda8a7a0655c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Rihtniemi&lt;/b&gt;&lt;br&gt;     Ympäristö: None&lt;br&gt;     Paras ajankohta: None&lt;br&gt;     Tornin korkeus (m): 0.0&lt;br&gt;     Kerrokset: 0&lt;br&gt;     Rakennusvuosi: 0     &lt;/div&gt;`)[0];
+                popup_04e27dfcd508f9a5d7a8c415e3388a1d.setContent(html_ea6c26fd69964dd801f7fda8a7a0655c);
+            
+        
+
+        marker_2af61db9feacd8adf5779eed174da478.bindPopup(popup_04e27dfcd508f9a5d7a8c415e3388a1d)
+        ;
+
+        
+    
+    
+            var marker_6dff8d0969f3553cb14c690b725614b0 = L.marker(
+                [60.718492449880166, 21.020502855651618],
+                {}
+            ).addTo(marker_cluster_4f2bfb909470a88ccccd3d87ffd5907b);
+        
+    
+        var popup_b8f58715b4b0471722e161b6a82231d6 = L.popup({&quot;maxWidth&quot;: 350, &quot;minWidth&quot;: 350});
+
+        
+            
+                var html_8a4934383517af3b2d62f7692a268f55 = $(`&lt;div id=&quot;html_8a4934383517af3b2d62f7692a268f55&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Isokari&lt;/b&gt;&lt;br&gt;     Ympäristö: None&lt;br&gt;     Paras ajankohta: None&lt;br&gt;     Tornin korkeus (m): 0.0&lt;br&gt;     Kerrokset: 0&lt;br&gt;     Rakennusvuosi: 0     &lt;/div&gt;`)[0];
+                popup_b8f58715b4b0471722e161b6a82231d6.setContent(html_8a4934383517af3b2d62f7692a268f55);
+            
+        
+
+        marker_6dff8d0969f3553cb14c690b725614b0.bindPopup(popup_b8f58715b4b0471722e161b6a82231d6)
+        ;
+
+        
+    
+    
+            var marker_dd00d5b9e3df872554adf854f46eeba9 = L.marker(
+                [60.3792513735709, 23.574978590608428],
+                {}
+            ).addTo(marker_cluster_4f2bfb909470a88ccccd3d87ffd5907b);
+        
+    
+        var popup_f337be17f549ff861d858f10d8a4b608 = L.popup({&quot;maxWidth&quot;: 350, &quot;minWidth&quot;: 350});
+
+        
+            
+                var html_e84c3412e1bbb2d71bf335e4e59d93c3 = $(`&lt;div id=&quot;html_e84c3412e1bbb2d71bf335e4e59d93c3&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Aneriojärvi&lt;/b&gt;&lt;br&gt;     Ympäristö: None&lt;br&gt;     Paras ajankohta: None&lt;br&gt;     Tornin korkeus (m): 0.0&lt;br&gt;     Kerrokset: 0&lt;br&gt;     Rakennusvuosi: 0     &lt;/div&gt;`)[0];
+                popup_f337be17f549ff861d858f10d8a4b608.setContent(html_e84c3412e1bbb2d71bf335e4e59d93c3);
+            
+        
+
+        marker_dd00d5b9e3df872554adf854f46eeba9.bindPopup(popup_f337be17f549ff861d858f10d8a4b608)
+        ;
+
+        
+    
+&lt;/script&gt;
+&lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div>
+    </div>
+</body>
+</html>
